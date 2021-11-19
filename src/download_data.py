@@ -3,6 +3,7 @@
 
 """Downloads data csv data from the web to a local filepath as either a csv format
 Usage: src/download_data.py --out_type=<out_type> --url=<url> --out_file=<out_file>
+
 Options:
 --out_type=<out_type>    Type of file to write locally (script supports csv)
 --url=<url>              URL from where to download the data (must be in standard csv format)
@@ -10,7 +11,6 @@ Options:
 """
 
 from docopt import docopt
-
 import os
 import pandas as pd
 
