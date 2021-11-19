@@ -17,7 +17,7 @@ Things to include in your issue:
 
 *  We recommend that you create a Git branch for each pull request (PR).  
 *  We use the standard Python documentation styles for creating functions and writing code.
-*  New code should follow the standard Python documentation and style guides [PEP257](https://www.python.org/dev/peps/pep-0257/).
+*  New code should follow the standard Python documentation and style guides [PEP257](https://www.python.org/dev/peps/pep-0257/) and 
 [Documenting Python](https://devguide.python.org/documenting/).
 
 ## Code of Conduct
@@ -27,4 +27,4 @@ Conduct](Code_of_conduct.md). By participating in this project you agree to
 abide by its terms.
 
 
-Adapted with attribution to dplyr website, [contributing](https://github.com/tidyverse/dplyr/blob/main/.github/CONTRIBUTING.md).
+Adapted with attribution to dplyr website: [dplyr contributing file](https://github.com/tidyverse/dplyr/blob/main/.github/CONTRIBUTING.md).
