@@ -5,7 +5,7 @@
 
 ## Introduction 
 
-This data analysis was performed as part of the DSCI 522, Data Science Workflows course at the University of British Columbia's Master of Data Science Program. Our team chose to analyze the coffee quality data set to identify the strongest predictor of coffee quality. We will be using an exploratory data analysis roadmap and predictive modeling to create this project. 
+This data analysis was performed as part of the DSCI 522, Data Science Workflows course at the University of British Columbia's Master of Data Science Program. Our team will use machine learning techniques to predict coffee quality scores on arabica coffees. We will be using an exploratory data analysis roadmap and predictive modeling to create this project. 
 
 ***
 
