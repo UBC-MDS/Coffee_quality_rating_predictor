@@ -126,11 +126,7 @@ def main(input_data, out_dir):
     # creates coffee region column
     df = df.assign(region=df["country_of_origin"].apply(coffee_region))
     
-    #splits the data into train and test sets
-    train_df, test_df = train_test_split(df, test_size=0.2, random_state=123)
-
-    
-
+    #function to format the file path name
     def file_path_name(file_path, data_frame):
         """
         Returns the file path name.
@@ -151,6 +147,16 @@ def main(input_data, out_dir):
         texts = file_path + data_frame + ".csv"
         texts.replace("//", "/")
         return texts
+    
+    #creates the cleaned dataset
+    try: 
+        df.to_csv(file_path_name(out_dir, "df"), index=False)
+    except:
+        os.makedirs(os.path.dirname(file_path_name(out_dir, "df")))
+        df.to_csv(file_path_name(out_dir, "df"), index = False)
+    
+    #splits the data into train and test sets
+    train_df, test_df = train_test_split(df, test_size=0.2, random_state=123)
     
     #creates the train and test csv files
     try: 
