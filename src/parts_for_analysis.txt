@@ -1,0 +1,30 @@
+    #splits into x and y
+    
+    X_train = train_df.drop(columns=["total_cup_points"])
+    X_test = test_df.drop(columns=["total_cup_points"])
+
+    y_train = train_df["total_cup_points"]
+    y_test = test_df["total_cup_points"]
+    
+    #creates preprocessor
+    
+    numeric_features = [
+    "moisture",
+    "quakers",
+    "altitude_mean_meters"
+    ]
+    categorical_features = [
+        "country_of_origin",
+        "harvest_year",
+        "variety",
+        "processing_method",
+        "category_one_defects",
+        "color",
+        "category_two_defects"
+        "region"
+        ]
+
+    preprocessor = make_column_transformer(
+        (StandardScaler(), numeric_features),
+        (OneHotEncoder(handle_unknown="ignore", sparse=False), categorical_features)
+    )
