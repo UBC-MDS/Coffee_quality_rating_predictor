@@ -1,0 +1,181 @@
+total_cup_points,country_of_origin,harvest_year,variety,processing_method,moisture,category_one_defects,quakers,color,category_two_defects,altitude_mean_meters,region
+85.17,Indonesia,2012,Sumatra Lintong,Semi-washed / Semi-pulped,0.11,0,0.0,Green,3,1325.0,Southeast Asia and the Pacific
+83.33,Costa Rica,2013,Catuai,Washed / Wet,0.11,0,0.0,Green,3,1200.0,Latin America
+80.25,Honduras,2016,Caturra,Natural / Dry,0.1,0,0.0,Green,4,1400.0,Latin America
+81.92,Mexico,2012,Other,Washed / Wet,0.12,0,0.0,Green,4,1650.0,Latin America
+80.08,Taiwan,2013/2014,Typica,Other,0.11,0,0.0,Green,0,200.0,Southeast Asia and the Pacific
+81.42,Brazil,2015/2016,Catuai,Natural / Dry,0.11,0,0.0,Green,2,1100.0,Latin America
+83.58,Colombia,2014,Caturra,Natural / Dry,0.0,0,0.0,Green,0,1600.0,Latin America
+82.92,Philippines,2014,Other,Washed / Wet,0.0,0,0.0,Bluish-Green,0,1600.0,Southeast Asia and the Pacific
+83.0,Guatemala,2015,Catuai,Washed / Wet,0.11,0,0.0,Green,3,1550.0,Latin America
+78.5,Mexico,2012,Caturra,Washed / Wet,0.13,1,0.0,Green,3,1200.0,Latin America
+79.42,Mexico,2012,Typica,Washed / Wet,0.13,0,0.0,Green,30,800.0,Latin America
+83.0,Colombia,2012,Caturra,Washed / Wet,0.11,1,0.0,Green,2,1775.0,Latin America
+82.0,Mexico,2012,Typica,Washed / Wet,0.12,0,0.0,Green,1,940.0,Latin America
+84.17,Costa Rica,2016,Caturra,Washed / Wet,0.09,0,0.0,Bluish-Green,2,1700.0,Latin America
+81.0,Mexico,2012,Other,Washed / Wet,0.12,0,0.0,Green,12,950.0,Latin America
+83.17,Guatemala,2012,Bourbon,Washed / Wet,0.0,0,0.0,Green,10,1402.08,Latin America
+83.83,Costa Rica,2013,Catuai,Washed / Wet,0.1,0,0.0,Green,3,1300.0,Latin America
+84.92,Colombia,2015,Caturra,Washed / Wet,0.12,0,0.0,Green,1,1775.0,Latin America
+83.0,Mexico,2012,Typica,Washed / Wet,0.11,0,0.0,Green,20,750.0,Latin America
+83.25,Colombia,2013,Caturra,Washed / Wet,0.11,0,0.0,Green,1,1750.0,Latin America
+81.92,Honduras,2017,Caturra,Washed / Wet,0.12,0,0.0,Green,1,1400.0,Latin America
+82.17,Mexico,2012,Typica,Washed / Wet,0.12,0,0.0,Green,4,1000.0,Latin America
+80.08,Taiwan,2013/2014,Typica,Washed / Wet,0.11,0,0.0,Green,0,150.0,Southeast Asia and the Pacific
+79.08,Guatemala,2017,Bourbon,Washed / Wet,0.1,0,0.0,Green,1,1700.0,Latin America
+84.17,Colombia,2012,Caturra,Washed / Wet,0.0,0,0.0,Green,2,1750.0,Latin America
+81.25,Guatemala,2013,Caturra,Washed / Wet,0.11,0,0.0,Green,4,1524.0,Latin America
+83.25,Taiwan,2014,Typica,Washed / Wet,0.1,0,0.0,Green,0,800.0,Southeast Asia and the Pacific
+83.83,Colombia,2013,Caturra,Washed / Wet,0.11,0,0.0,Green,1,1750.0,Latin America
+83.67,Guatemala,2012,Bourbon,Washed / Wet,0.11,0,0.0,Green,13,1310.64,Latin America
+80.83,Mexico,2012,Bourbon,Washed / Wet,0.13,0,0.0,Green,1,100.0,Latin America
+81.83,Myanmar,2015,Catuai,Washed / Wet,0.0,0,0.0,Green,2,4001.0,Southeast Asia and the Pacific
+83.67,Guatemala,2012,Caturra,Washed / Wet,0.1,0,0.0,Green,0,1524.0,Latin America
+83.0,Colombia,2013,Caturra,Natural / Dry,0.0,0,0.0,Green,2,1000.0,Latin America
+83.0,Taiwan,2014,Typica,Washed / Wet,0.08,0,0.0,Green,0,1200.0,Southeast Asia and the Pacific
+82.58,Mexico,2012,Typica,Washed / Wet,0.1,0,0.0,Green,6,1250.0,Latin America
+82.33,Honduras,2017,Caturra,Washed / Wet,0.1,0,1.0,Green,8,1396.0,Latin America
+71.75,Costa Rica,2014,Caturra,Washed / Wet,0.11,0,0.0,Green,7,1200.0,Latin America
+80.83,Mexico,2012,Typica,Washed / Wet,0.11,0,0.0,Green,3,1100.0,Latin America
+82.42,Brazil,2012,Catuai,Semi-washed / Semi-pulped,0.12,0,0.0,Blue-Green,1,1000.0,Latin America
+80.67,Costa Rica,2015,Caturra,Washed / Wet,0.11,0,0.0,Blue-Green,4,185.0,Latin America
+79.67,Mexico,2012,Caturra,Washed / Wet,0.13,5,0.0,None,6,975.0,Latin America
+80.75,Guatemala,2015,Caturra,Washed / Wet,0.12,0,0.0,Green,1,1706.88,Latin America
+82.0,Taiwan,2013,Typica,Washed / Wet,0.09,0,0.0,Green,0,600.0,Southeast Asia and the Pacific
+82.25,Malawi,2014,Gesha,Washed / Wet,0.13,0,0.0,Blue-Green,0,1180.0,East Africa and the Arabian Peninsula
+80.25,Guatemala,2012,Caturra,Washed / Wet,0.11,1,0.0,Green,12,1400.0,Latin America
+80.92,Taiwan,2013/2014,Typica,Other,0.11,0,0.0,Green,0,688.0,Southeast Asia and the Pacific
+82.08,"Tanzania, United Republic Of",2014,Bourbon,Washed / Wet,0.12,0,0.0,Green,5,1500.0,East Africa and the Arabian Peninsula
+81.08,Mexico,2012,Typica,Washed / Wet,0.11,0,0.0,Green,5,1642.0,Latin America
+79.42,Guatemala,2013,Bourbon,Washed / Wet,0.1,0,0.0,Green,2,1219.2,Latin America
+83.0,Vietnam,2014,Caturra,Other,0.0,0,0.0,Green,0,1550.0,Southeast Asia and the Pacific
+77.0,Peru,2014,Caturra,Washed / Wet,0.0,7,0.0,Green,9,1200.0,Latin America
+84.0,Colombia,2013,Caturra,Washed / Wet,0.11,0,0.0,Green,1,1700.0,Latin America
+81.25,Brazil,2015/2016,Yellow Bourbon,Natural / Dry,0.0,0,0.0,Green,1,1.0,Latin America
+85.33,Costa Rica,2014,Caturra,Washed / Wet,0.0,0,0.0,Bluish-Green,0,1300.0,Latin America
+81.5,Malawi,2014,Gesha,Washed / Wet,0.12,0,0.0,Green,0,1599.0,East Africa and the Arabian Peninsula
+76.17,Indonesia,2011,Other,Natural / Dry,0.12,4,0.0,None,26,3500.0,Southeast Asia and the Pacific
+83.17,"Tanzania, United Republic Of",2016,Bourbon,Washed / Wet,0.12,0,0.0,Green,3,168.0,East Africa and the Arabian Peninsula
+83.33,Brazil,2015/2016,Catuai,Semi-washed / Semi-pulped,0.1,1,0.0,Green,5,1227.0,Latin America
+78.67,Mexico,2012,Caturra,Washed / Wet,0.13,0,0.0,None,2,1150.0,Latin America
+87.25,United States,2014,Other,Washed / Wet,0.0,0,0.0,None,0,2019.0,Southeast Asia and the Pacific
+83.67,Kenya,2017,SL28,Washed / Wet,0.11,0,0.0,Bluish-Green,0,1700.0,East Africa and the Arabian Peninsula
+84.0,Ethiopia,2013,Other,Natural / Dry,0.09,4,0.0,Green,40,1550.0,East Africa and the Arabian Peninsula
+83.25,Mexico,2013,Bourbon,Washed / Wet,0.12,0,0.0,Green,6,1300.0,Latin America
+82.58,Guatemala,2017,Bourbon,Washed / Wet,0.1,0,1.0,Green,2,1219.2,Latin America
+82.75,China,2015,Catimor,Washed / Wet,0.11,0,0.0,Green,2,1500.0,Southeast Asia and the Pacific
+82.92,Brazil,2014/2015,Moka Peaberry,Semi-washed / Semi-pulped,0.11,0,0.0,Green,16,11000.0,Latin America
+81.5,Costa Rica,2014,Caturra,Washed / Wet,0.12,1,0.0,Green,2,1200.0,Latin America
+83.83,Mexico,2012,Bourbon,Natural / Dry,0.1,0,0.0,Green,2,1218.0,Latin America
+78.5,Mexico,2012,Typica,Washed / Wet,0.12,0,0.0,None,14,1400.0,Latin America
+83.17,China,2015,Catimor,Washed / Wet,0.1,0,0.0,Green,3,1600.0,Southeast Asia and the Pacific
+81.92,Mexico,2013,Bourbon,Washed / Wet,0.12,0,0.0,Green,6,1300.0,Latin America
+82.92,Guatemala,2013,Bourbon,Washed / Wet,0.11,0,0.0,Green,2,1706.88,Latin America
+83.25,Colombia,2012,Caturra,Washed / Wet,0.11,0,0.0,Green,0,1775.0,Latin America
+83.08,Brazil,2015,Yellow Bourbon,Pulped natural / honey,0.11,0,2.0,Bluish-Green,2,905.0,Latin America
+84.92,Brazil,2011,Bourbon,Natural / Dry,0.11,0,0.0,Green,2,1200.0,Latin America
+83.5,Mexico,2012,Pacamara,Washed / Wet,0.12,0,0.0,Green,0,1400.0,Latin America
+80.42,Taiwan,2013/2014,Typica,Washed / Wet,0.11,0,0.0,Green,0,600.0,Southeast Asia and the Pacific
+84.83,Taiwan,2016,Typica,Natural / Dry,0.0,0,0.0,Green,0,350.0,Southeast Asia and the Pacific
+81.58,"Tanzania, United Republic Of",2014,Other,Washed / Wet,0.12,0,0.0,Green,5,1800.0,East Africa and the Arabian Peninsula
+82.0,Laos,2015,Other,Washed / Wet,0.12,0,0.0,Blue-Green,0,1250.0,East Africa and the Arabian Peninsula
+82.83,Colombia,2013,Typica,Natural / Dry,0.0,4,0.0,Green,4,1800.0,Latin America
+80.67,Mexico,2014,Typica,Washed / Wet,0.12,0,0.0,Green,4,1200.0,Latin America
+83.83,Guatemala,2013,Bourbon,Washed / Wet,0.11,0,0.0,Green,3,1310.64,Latin America
+85.42,Uganda,2013,SL14,Washed / Wet,0.12,0,0.0,Green,5,1950.0,East Africa and the Arabian Peninsula
+83.42,Costa Rica,2016,Caturra,Washed / Wet,0.09,0,0.0,Blue-Green,4,1850.0,Latin America
+82.75,Colombia,2012,Caturra,Washed / Wet,0.11,0,0.0,Green,3,1775.0,Latin America
+83.75,Colombia,2013,Caturra,Washed / Wet,0.11,0,0.0,Green,3,1750.0,Latin America
+85.33,Costa Rica,2014,Caturra,Washed / Wet,0.1,0,0.0,Bluish-Green,2,1300.0,Latin America
+80.5,Guatemala,2017,Caturra,Washed / Wet,0.1,0,0.0,Green,4,1500.0,Latin America
+82.0,Honduras,2014,Caturra,Washed / Wet,0.11,0,0.0,Green,5,1400.0,Latin America
+83.25,Mexico,2015,Typica,Natural / Dry,0.12,0,0.0,Bluish-Green,2,1261.0,Latin America
+83.83,Brazil,2015/2016,Yellow Bourbon,Natural / Dry,0.0,0,0.0,Green,0,1.0,Latin America
+84.83,Uganda,2013,SL14,Natural / Dry,0.12,0,0.0,Green,1,1650.0,East Africa and the Arabian Peninsula
+84.0,Honduras,2017,Caturra,Washed / Wet,0.1,0,0.0,Green,5,1500.0,Latin America
+82.67,"Tanzania, United Republic Of",2014,Other,Washed / Wet,0.12,0,0.0,Green,0,1700.0,East Africa and the Arabian Peninsula
+83.08,Costa Rica,2014,Catuai,Washed / Wet,0.1,0,0.0,Green,3,1300.0,Latin America
+84.25,Colombia,2016,Caturra,Natural / Dry,0.11,0,0.0,Green,2,2560.0,Latin America
+81.33,Brazil,2015/2016,Catuai,Natural / Dry,0.11,0,0.0,Green,14,1100.0,Latin America
+84.25,China,2015,Catimor,Natural / Dry,0.1,0,0.0,Green,1,1400.0,Southeast Asia and the Pacific
+79.0,Guatemala,2014,Other,Washed / Wet,0.12,0,0.0,Green,3,1219.2,Latin America
+83.75,China,2015,Catimor,Washed / Wet,0.1,0,1.0,Green,2,1650.0,Southeast Asia and the Pacific
+78.33,Guatemala,2012,Bourbon,Washed / Wet,0.11,1,0.0,Green,4,1310.64,Latin America
+82.75,Guatemala,2017,Bourbon,Washed / Wet,0.11,0,0.0,Green,4,1700.0,Latin America
+82.33,Guatemala,2015,Bourbon,Washed / Wet,0.1,0,0.0,Green,6,1676.4,Latin America
+82.92,Colombia,2017,Caturra,Washed / Wet,0.11,0,0.0,Green,1,1500.0,Latin America
+83.67,Guatemala,2013,Bourbon,Washed / Wet,0.12,1,0.0,Green,3,1310.64,Latin America
+82.75,Guatemala,2017,Bourbon,Washed / Wet,0.1,0,0.0,Green,1,1219.2,Latin America
+81.42,Malawi,2014,Gesha,Washed / Wet,0.12,0,0.0,Bluish-Green,0,1422.0,East Africa and the Arabian Peninsula
+82.08,Vietnam,2012,Other,Natural / Dry,0.12,0,0.0,Green,2,1040.0,Southeast Asia and the Pacific
+81.58,Guatemala,2017,Bourbon,Washed / Wet,0.12,0,0.0,Green,0,190164.0,Latin America
+80.58,Honduras,2014,Caturra,Washed / Wet,0.11,0,0.0,Green,5,1400.0,Latin America
+84.75,Honduras,2014,Catuai,Washed / Wet,0.11,0,0.0,Green,4,1450.0,Latin America
+82.75,Guatemala,2014,Pacas,Washed / Wet,0.13,0,0.0,Green,2,1524.0,Latin America
+83.67,Colombia,2013,Caturra,Washed / Wet,0.0,0,0.0,Green,1,1900.0,Latin America
+84.58,Brazil,2011,Bourbon,Semi-washed / Semi-pulped,0.12,0,0.0,Green,2,1300.0,Latin America
+80.08,Brazil,2017 / 2018,Bourbon,Pulped natural / honey,0.11,0,0.0,Green,5,1100.0,Latin America
+82.5,Colombia,2013,Caturra,Washed / Wet,0.11,0,0.0,Green,1,1750.0,Latin America
+81.75,Mexico,2012,Typica,Washed / Wet,0.11,0,0.0,Green,1,1100.0,Latin America
+83.83,Colombia,2017,Caturra,Washed / Wet,0.0,1,0.0,Green,6,2527.0,Latin America
+82.83,"Tanzania, United Republic Of",2012,Arusha,Washed / Wet,0.11,0,0.0,Green,5,1400.0,East Africa and the Arabian Peninsula
+82.75,Honduras,2017,Caturra,Natural / Dry,0.09,0,1.0,Green,6,1400.0,Latin America
+82.42,Colombia,2016,Caturra,Washed / Wet,0.11,0,0.0,Green,1,1600.0,Latin America
+79.25,Mexico,2012,Bourbon,Washed / Wet,0.13,0,0.0,Green,10,1000.0,Latin America
+81.83,Guatemala,2015,Bourbon,Washed / Wet,0.1,2,0.0,Green,6,3280.0,Latin America
+81.83,Taiwan,2014,Typica,Washed / Wet,0.0,0,0.0,Green,0,700.0,Southeast Asia and the Pacific
+84.08,Taiwan,2016,Typica,Washed / Wet,0.1,0,0.0,Bluish-Green,4,968.0,Southeast Asia and the Pacific
+83.17,Guatemala,2017,Bourbon,Washed / Wet,0.1,0,0.0,Green,1,1901.0,Latin America
+87.17,Costa Rica,2014,Caturra,Washed / Wet,0.11,0,0.0,Green,2,1300.0,Latin America
+81.92,Mexico,2012,Mundo Novo,Washed / Wet,0.14,2,0.0,None,8,690.0,Latin America
+83.42,Colombia,2015,Caturra,Natural / Dry,0.12,4,0.0,Green,0,442.0,Latin America
+81.0,Honduras,2014,Caturra,Natural / Dry,0.12,0,0.0,Green,1,1350.0,Latin America
+84.42,Colombia,2014,Caturra,Washed / Wet,0.0,0,0.0,Green,3,1775.0,Latin America
+82.0,Honduras,2017,Caturra,Washed / Wet,0.12,0,0.0,Green,1,1600.0,Latin America
+84.42,Indonesia,2017,Mandheling,Other,0.0,0,0.0,Blue-Green,3,1400.0,Southeast Asia and the Pacific
+84.58,Colombia,2012,Caturra,Washed / Wet,0.0,0,0.0,Green,2,1750.0,Latin America
+83.25,Colombia,2015/2016,Caturra,Natural / Dry,0.0,0,0.0,Green,2,442.0,Latin America
+76.33,Guatemala,2012,Bourbon,Washed / Wet,0.11,0,0.0,Green,8,1310.64,Latin America
+81.67,Mexico,2013,Typica,Washed / Wet,0.12,0,0.0,Green,6,1400.0,Latin America
+83.75,Mexico,2012,Caturra,Natural / Dry,0.13,5,0.0,None,5,700.0,Latin America
+79.5,Colombia,2013,Caturra,Washed / Wet,0.0,0,0.0,Green,2,1550.0,Latin America
+83.5,Mexico,2012,Bourbon,Natural / Dry,0.13,0,0.0,Green,14,1170.0,Latin America
+79.75,Guatemala,2016,Bourbon,Washed / Wet,0.1,0,4.0,Green,1,190164.0,Latin America
+81.17,Costa Rica,2015,Caturra,Washed / Wet,0.11,0,0.0,Bluish-Green,0,1300.0,Latin America
+81.17,Brazil,2012,Mundo Novo,Natural / Dry,0.12,0,0.0,Green,1,1000.0,Latin America
+82.67,Brazil,2016,Bourbon,Natural / Dry,0.11,0,2.0,Bluish-Green,3,934.0,Latin America
+83.17,China,2015,Catimor,Washed / Wet,0.11,0,0.0,Green,0,1200.0,Southeast Asia and the Pacific
+81.67,Brazil,2015/2016,Yellow Bourbon,Natural / Dry,0.0,0,0.0,Green,0,1.0,Latin America
+83.42,Uganda,2015,SL14,Washed / Wet,0.11,0,0.0,Green,1,1800.0,East Africa and the Arabian Peninsula
+86.17,Thailand,2012,Caturra,Washed / Wet,0.1,1,0.0,Green,9,1300.0,Southeast Asia and the Pacific
+84.58,Guatemala,2014,Bourbon,Washed / Wet,0.09,0,0.0,Green,0,1219.2,Latin America
+81.92,El Salvador,2014,Bourbon,Washed / Wet,0.11,0,0.0,Green,2,1250.0,Latin America
+80.0,Mexico,2012,Typica,Washed / Wet,0.12,0,0.0,Green,9,1250.0,Latin America
+80.92,Taiwan,2017,Other,Washed / Wet,0.0,0,0.0,Blue-Green,0,200.0,Southeast Asia and the Pacific
+84.67,Indonesia,2016,Java,Washed / Wet,0.12,0,0.0,Green,7,1200.0,Southeast Asia and the Pacific
+83.33,"Tanzania, United Republic Of",2014,Other,Semi-washed / Semi-pulped,0.12,0,0.0,Green,6,1700.0,East Africa and the Arabian Peninsula
+83.0,Brazil,2014,Catuai,Natural / Dry,0.0,0,0.0,Green,0,1000.0,Latin America
+83.92,Brazil,2017 / 2018,Bourbon,Natural / Dry,0.0,0,0.0,Green,3,890.0,Latin America
+81.5,Mexico,2012,Typica,Natural / Dry,0.11,0,0.0,Green,3,1100.0,Latin America
+86.33,Costa Rica,2015/2016,Caturra,Washed / Wet,0.0,0,0.0,Blue-Green,0,1300.0,Latin America
+83.83,Costa Rica,2015,Caturra,Washed / Wet,0.0,0,0.0,Blue-Green,0,1850.0,Latin America
+81.33,Brazil,2014/2015,Yellow Bourbon,Other,0.12,0,0.0,Green,6,1200.0,Latin America
+79.58,Mexico,2012,Typica,Washed / Wet,0.12,0,0.0,None,11,1250.0,Latin America
+83.58,Uganda,2013,SL14,Washed / Wet,0.12,0,0.0,Green,5,1800.0,East Africa and the Arabian Peninsula
+82.75,Guatemala,2017,Caturra,Washed / Wet,0.11,0,0.0,Green,8,1800.0,Latin America
+83.17,Brazil,2012,Mundo Novo,Natural / Dry,0.11,0,0.0,Green,4,950.0,Latin America
+82.17,"Tanzania, United Republic Of",2015/2016,Other,Washed / Wet,0.12,0,0.0,Green,1,1600.0,East Africa and the Arabian Peninsula
+81.5,Honduras,2017,Caturra,Washed / Wet,0.1,0,0.0,Green,5,1400.0,Latin America
+78.0,Guatemala,2014,Other,Washed / Wet,0.1,1,0.0,Green,2,1219.2,Latin America
+79.33,Mexico,2012,Typica,Washed / Wet,0.14,0,0.0,None,23,950.0,Latin America
+82.33,Guatemala,2012,Bourbon,Washed / Wet,0.1,2,0.0,Green,5,1310.64,Latin America
+82.83,Guatemala,2012,Bourbon,Washed / Wet,0.11,0,0.0,Green,10,1310.64,Latin America
+82.92,Brazil,2017 / 2018,Bourbon,Natural / Dry,0.0,0,0.0,Green,0,890.0,Latin America
+81.92,Guatemala,2015,Catuai,Washed / Wet,0.11,0,0.0,Green,7,1550.0,Latin America
+83.0,Colombia,2011,Caturra,Washed / Wet,0.12,0,0.0,Bluish-Green,0,1775.0,Latin America
+83.17,Brazil,2017 / 2018,Bourbon,Natural / Dry,0.11,0,0.0,Green,4,890.0,Latin America
+79.5,Nicaragua,2015,Caturra,Natural / Dry,0.12,0,0.0,Green,6,1050.0,Latin America
+80.5,Guatemala,2013,Bourbon,Washed / Wet,0.12,1,0.0,Green,1,1859.28,Latin America
+80.42,Mexico,2012,Caturra,Washed / Wet,0.12,4,0.0,Green,16,1550.0,Latin America
+82.25,Mexico,2012,Typica,Washed / Wet,0.12,0,0.0,Green,13,1250.0,Latin America
+83.75,Colombia,2014,Other,Washed / Wet,0.0,0,0.0,Green,3,1550.0,Latin America
