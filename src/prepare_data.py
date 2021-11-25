@@ -4,7 +4,7 @@
 """Cleans, preps, and feature engineers the data for the Coffee Quality Database dataset (https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-07-07/readme.md).
 Writes the training and test data to separate csv files.
 
-Usage: src/pre_process_coffee.py --input_data=<input_data> --out_dir=<out_dir>
+Usage: src/prepare_data.py --input_data=<input_data> --out_dir=<out_dir>
   
 Options:
 --input_data=<input_data>  Path (including filename) to downloaded data retrieved from download_data.py script 
@@ -150,10 +150,10 @@ def main(input_data, out_dir):
     
     #creates the cleaned dataset
     try: 
-        df.to_csv(file_path_name(out_dir, "df"), index=False)
+        df.to_csv(file_path_name(out_dir, "full_df"), index=False)
     except:
-        os.makedirs(os.path.dirname(file_path_name(out_dir, "df")))
-        df.to_csv(file_path_name(out_dir, "df"), index = False)
+        os.makedirs(os.path.dirname(file_path_name(out_dir, "full_df")))
+        df.to_csv(file_path_name(out_dir, "full_df"), index = False)
     
     #splits the data into train and test sets
     train_df, test_df = train_test_split(df, test_size=0.2, random_state=123)
