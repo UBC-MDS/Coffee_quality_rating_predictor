@@ -4,7 +4,7 @@
 """Cleans, preps, and feature engineers the data for the Coffee Quality Database dataset (https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-07-07/readme.md).
 Writes the training and test data to separate csv files.
 
-Usage: src/pre_process_coffee.py --input_data=<input_data> --out_dir=<out_dir>
+Usage: src/prepare_data.py --input_data=<input_data> --out_dir=<out_dir>
   
 Options:
 --input_data=<input_data>  Path (including filename) to downloaded data retrieved from download_data.py script 
