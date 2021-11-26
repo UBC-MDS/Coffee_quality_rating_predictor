@@ -100,8 +100,10 @@ def file_path_name(file_path, data_frame):
     texts.replace("//", "/")
     return texts
 
+# create opt object
 opt = docopt(__doc__)
 
+#begin main function
 def main(input_data, out_dir):
     df = pd.read_csv(input_data, header=1)
     
@@ -161,7 +163,7 @@ def main(input_data, out_dir):
     #splits the data into train and test sets
     train_df, test_df = train_test_split(df, test_size=0.2, random_state=123)
     
-    #creates the train and test csv files
+    #creates the train and test csv files and saves
     try: 
         train_df.to_csv(file_path_name(out_dir, "train_df"), index=False)
     except:
