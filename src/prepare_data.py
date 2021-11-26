@@ -19,6 +19,87 @@ from docopt import docopt
 import os
 import pandas as pd
 
+#function to clean region
+def coffee_region(text):
+    """
+    Returns the official coffee region of the associated country.
+
+    Parameters:
+    ------
+    text: (str)
+    the input text
+
+    Returns:
+    -------
+    Official Coffee region: (str)
+    """
+    region_1 = "East Africa and the Arabian Peninsula"
+    region_2 = "Southeast Asia and the Pacific"
+    region_3 = "Latin America"
+
+    country_list3 = ("Mexico",
+                     "Guatemala",
+                     "Colombia",
+                     "Brazil",
+                     "Honduras",
+                     "Costa Rica",
+                     "El Salvador",
+                     "Nicaragua",
+                     "Haiti",
+                     "Panama",
+                    "United States (Puerto Rico)",
+                    "Peru")
+    country_list2 = ("Taiwan",
+                     "Indonesia",
+                     "China",
+                     "Thailand",
+                     "Myanmar",
+                     "Vietnam",
+                     "Philippines",
+                     "Laos",
+                     "United States")
+    country_list1 = ("Tanzania, United Republic Of",
+                     "Uganda",
+                     "Kenya",
+                     "Malawi",
+                     "Ethiopia",
+                     "Laos",
+                     "Rwanda") 
+
+    for country in country_list1:
+        if text == country:
+            return region_1
+
+    for country in country_list2:
+        if text == country:
+            return region_2    
+
+    for country in country_list3:
+        if text == country:
+            return region_3
+
+#function to format the file path name
+def file_path_name(file_path, data_frame):
+    """
+    Returns the file path name.
+
+    Parameters:
+    ------
+    file_path: (str)
+    the name of the file path
+
+    data_frame: (str)
+    the name of the dataframe
+
+    Returns:
+    -------
+    The fill filepath name: (str)
+    """
+
+    texts = file_path + data_frame + ".csv"
+    texts.replace("//", "/")
+    return texts
+
 opt = docopt(__doc__)
 
 def main(input_data, out_dir):
@@ -64,89 +145,11 @@ def main(input_data, out_dir):
     #drop the null values
     df = df.dropna()
     
-    #function to clean region
-    def coffee_region(text):
-        """
-        Returns the official coffee region of the associated country.
-
-        Parameters:
-        ------
-        text: (str)
-        the input text
-
-        Returns:
-        -------
-        Official Coffee region: (str)
-        """
-        region_1 = "East Africa and the Arabian Peninsula"
-        region_2 = "Southeast Asia and the Pacific"
-        region_3 = "Latin America"
-
-        country_list3 = ("Mexico",
-                         "Guatemala",
-                         "Colombia",
-                         "Brazil",
-                         "Honduras",
-                         "Costa Rica",
-                         "El Salvador",
-                         "Nicaragua",
-                         "Haiti",
-                         "Panama",
-                        "United States (Puerto Rico)",
-                        "Peru")
-        country_list2 = ("Taiwan",
-                         "Indonesia",
-                         "China",
-                         "Thailand",
-                         "Myanmar",
-                         "Vietnam",
-                         "Philippines",
-                         "Laos",
-                         "United States")
-        country_list1 = ("Tanzania, United Republic Of",
-                         "Uganda",
-                         "Kenya",
-                         "Malawi",
-                         "Ethiopia",
-                         "Laos",
-                         "Rwanda") 
-
-        for country in country_list1:
-            if text == country:
-                return region_1
-
-        for country in country_list2:
-            if text == country:
-                return region_2    
-
-        for country in country_list3:
-            if text == country:
-                return region_3
+    #removes outliers for `altitude_mean_meters`
+    df = df.query('altitude_mean_meters < 10000')
     
     # creates coffee region column
     df = df.assign(region=df["country_of_origin"].apply(coffee_region))
-    
-    #function to format the file path name
-    def file_path_name(file_path, data_frame):
-        """
-        Returns the file path name.
-
-        Parameters:
-        ------
-        file_path: (str)
-        the name of the file path
-
-        data_frame: (str)
-        the name of the dataframe
-
-        Returns:
-        -------
-        The fill filepath name: (str)
-        """
-
-        texts = file_path + data_frame + ".csv"
-        texts.replace("//", "/")
-        return texts
     
     #creates the cleaned dataset
     try: 
