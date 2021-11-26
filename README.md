@@ -47,7 +47,7 @@ The final report can be found *[here]()*.
     python src/ml_analysis.py --train="data/processed/train_df.csv" --test="data/processed/test_df.csv" --table_file="results/model_comparison.csv" --image1_file="results/feature_importance_rfr_plot.png" --image2_file="results/feature_importance_rfc_plot.png"
 
     # render final report
-    Rscript -e "rmarkdown::render('doc/breast_cancer_predict_report.Rmd', output_format = 'github_document')"
+    Rscript -e "rmarkdown::render('reports/coffee_rating_prediction_report.rmd', output_format = 'html_document')"
 
 
 ## Dependencies 
