@@ -1,7 +1,7 @@
 # Authors: Arlin Cherian, Michelle Wang
 # Created date: 2021-11-24
 
-"""Fits a Ridge Regression Model, Random Forest Regressor model and a Support Vector Classification Model
+"""Fits a Ridge Regression Model, Random Forest Regressor model and a Random Forest Classification Model
 on the pre-processed training data on coffee quality rating and saves the output table and images.
 Usage: src/ml_analysis_script.py --train=<train> --test=<test> --table_file=<table_file> --image1_file=<image1_file> --image2_file=<image2_file>
   
