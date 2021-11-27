@@ -24,6 +24,14 @@ from docopt import docopt
 
 opt = docopt(__doc__)
 
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options as firefox_Options
+
+options = firefox_Options()
+options.headless = True
+executable_path = "/opt/homebrew/bin/geckodriver"
+driver = webdriver.Firefox(options=options, executable_path=executable_path)
+
 
 def plot_target_histogram(
     dataframe: pd.DataFrame, target_feature: str, output_dir: str = "../reports/images/"
@@ -37,6 +45,7 @@ def plot_target_histogram(
         target_feature (str): Feature name accepted as target
         output_dir (str, optional): Directory output for image saving. Defaults to "../reports/images/".
     """
+
     # Histogram Plot of Target Variable
     histogram_plot = (
         alt.Chart(dataframe, title="Target variable histogram")
@@ -47,7 +56,7 @@ def plot_target_histogram(
         )
     )
 
-    histogram_plot.save(output_dir + "target_histogram.html")
+    histogram_plot.save(output_dir + "target_histogram.png", webdriver=driver)
     print("Target Feature Histogram Plotted")
 
 
@@ -125,7 +134,7 @@ def plot_pairwise(
         )
     )
 
-    splom.save(output_dir + "target_histogram.html")
+    splom.save(output_dir + "pairwise_plots.png", webdriver=driver)
     return print("PairWise Scatter Plotted")
 
 

@@ -33,6 +33,13 @@ We will first establish from our data our target and feature variables. Our targ
 
 To get a sense of our data we have performed some exploratory EDA [here](https://github.com/UBC-MDS/DSCI_522_GROUP3_COFFEERATINGS/blob/main/src/coffee_rating.ipynb), in which we plotted distributions of select categorical features, `country_of_origin` and `color`, from the training dataset. In doing so, we see that the average coffee rating differed between the various countries of origin: the highest was from Ethiopia and the lowest was from Haiti. However, we didn’t see much variation in the average coffee quality rating among various colours of the coffee beans. To explore our first inferential sub-question, we created a scatterplot matrix of the numeric features. We hope to expand this to explore the relationship between the categorical features and the total coffee quality rating with additional cleaning and preprocessing of the dataset at a later date.
 
+For altair to save images in png format we need to install additional dependencies. We will be using the [altair](https://altair-viz.github.io/) library to create our figures.
+
+`pip install altair_saver`
+`pip install selenium`
+`brew install geckodriver`
+
+
 To execute our exploratory visualisations, we will use the following code:
 
 `python src/plot_visualisations.py --input_data='data/processed/train_df.csv' --out_dir='reports/images/`
@@ -72,7 +79,9 @@ To end our analysis, we will re-visit our secondary sub-question and extract the
       - scikit-learn=1.0
       - requests=2.24.0
       - altair=4.1.0
+      - altair_saver=0.5.0
       - seaborn=0.11.2
+      - selenium=4.1.0
 ***
 ## References
 
