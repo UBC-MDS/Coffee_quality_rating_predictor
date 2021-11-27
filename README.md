@@ -33,6 +33,15 @@ We will first establish from our data our target and feature variables. Our targ
 
 To get a sense of our data we have performed some exploratory EDA [here](https://github.com/UBC-MDS/DSCI_522_GROUP3_COFFEERATINGS/blob/main/src/coffee_rating.ipynb), in which we plotted distributions of select categorical features, `country_of_origin` and `color`, from the training dataset. In doing so, we see that the average coffee rating differed between the various countries of origin: the highest was from Ethiopia and the lowest was from Haiti. However, we didn’t see much variation in the average coffee quality rating among various colours of the coffee beans. To explore our first inferential sub-question, we created a scatterplot matrix of the numeric features. We hope to expand this to explore the relationship between the categorical features and the total coffee quality rating with additional cleaning and preprocessing of the dataset at a later date.
 
+To execute our exploratory visualisations, we will use the following code:
+
+`python src/plot_visualisations.py --input_data='data/processed/train_df.csv' --out_dir='reports/images/`
+
+### Exploratory Visualisation
+We will now begin our analysis by exploring the relationship between the numeric features and the total coffee quality rating. We will use the following visualisations: (1) a histogram of how the rating has changed for the target variable, (2) a scatterplot matrix of the numeric features and the target variable, and (3) a heatmap of the correlation between the numeric features and the target variable.
+
+Post visualisation, we iterated over data cleaning steps, and added new processing parameters to remove outliers from our dataset. This has significantly improved our dataset in terms of data quality which will be used to train our models.
+
 ### Model Building and Hyperparameter Optimization
 These next steps describe how we plan to build and evaluate our models to carry out our analysis.
 
@@ -63,6 +72,7 @@ To end our analysis, we will re-visit our secondary sub-question and extract the
       - scikit-learn=1.0
       - requests=2.24.0
       - altair=4.1.0
+      - seaborn=0.11.2
 ***
 ## References
 
