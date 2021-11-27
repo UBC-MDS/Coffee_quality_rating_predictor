@@ -38,8 +38,7 @@ def plot_target_histogram(
     plt.figure(figsize=(16, 6))
 
     # Histogram Plot of Target Variable
-    histogram_plot = sns.histplot(dataframe, x=target_feature, bins=20)
-
+    histogram_plot = sns.histplot(dataframe, x=target_feature, bins=20).set_title('Distribution of target variable, total_cup_points', weight='bold')
     fig = histogram_plot.get_figure()
 
     fig.savefig(output_dir + "target_histogram.png")
