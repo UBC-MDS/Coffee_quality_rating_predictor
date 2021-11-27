@@ -29,6 +29,23 @@ We will be analyzing the *[Coffee Quality Dataset](https://github.com/jldbc/coff
 * Data format: csv file, 1311 rows and 44 columns.
 ***
 
+
+### Exploratory Visualisation
+We will now begin our analysis by exploring the relationship between the numeric features and the total coffee quality rating. We will use the following visualisations: (1) a histogram of how the rating has changed for the target variable, (2) a scatterplot matrix of the numeric features and the target variable, and (3) a heatmap of the correlation between the numeric features and the target variable.
+
+Post visualisation, we iterated over data cleaning steps, and added new processing parameters to remove outliers from our dataset. This has significantly improved our dataset in terms of data quality which will be used to train our models.
+
+For altair to save images in png format we need to install additional dependencies. We will be using the [altair](https://altair-viz.github.io/) library to create our figures.
+
+`pip install altair_saver`
+`pip install selenium`
+`brew install geckodriver`
+
+
+To execute our exploratory visualisations, we will use the following code:
+
+`python src/plot_visualisations.py --input_data='data/processed/train_df.csv' --out_dir='reports/images/`
+
 ### Report
 The final report can be found *[here]()*.
 ***
@@ -60,6 +77,9 @@ To replicate the analysis, do the following: clone this GitHub repository, insta
   - scikit-learn==1.0
   - requests==2.24.0
   - altair==4.1.0
+  - altair_saver=0.5.0
+  - seaborn=0.11.2
+  - selenium=4.1.0
   - seaborn ==0.11.2
   - numpy ==1.21.2
 - R version 4.1.1 and packages:
