@@ -44,7 +44,7 @@ For altair to save images in png format we need to install additional dependenci
 
 To execute our exploratory visualisations, we will use the following code:
 
-`python src/plot_visualisations.py --input_data='data/processed/train_df.csv' --out_dir='reports/images/`
+`python src/plot_visualisations.py --input_data='data/processed/train_df.csv' --out_dir='results/images/`
 
 ### Report
 The final report can be found *[here]()*.
