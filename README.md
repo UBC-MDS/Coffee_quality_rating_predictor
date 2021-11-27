@@ -43,7 +43,7 @@ To replicate the analysis, do the following: clone this GitHub repository, insta
     python src/prepare_data.py --input_data=data/raw/coffee_ratings.csv --out_dir=data/processed/
     
     # run eda analysis
-    python src/plot_visualisations.py --input_data='data/processed/train_df.csv' --out_dir='reports/images/'
+    python src/plot_visualisations.py --input_data='data/processed/train_df.csv' --out_dir='results/images/'
     
     # run the main analysis
     python src/ml_analysis.py --train="data/processed/train_df.csv" --test="data/processed/test_df.csv" --table_file="results/model_comparison.csv" --image1_file="results/feature_importance_rfr_plot.png" --image2_file="results/feature_importance_rfc_plot.png"
@@ -60,11 +60,8 @@ To replicate the analysis, do the following: clone this GitHub repository, insta
   - scikit-learn==1.0
   - requests==2.24.0
   - altair==4.1.0
-  - altair_saver=0.5.0
   - seaborn=0.11.2
-  - selenium=4.1.0
-  - seaborn ==0.11.2
-  - numpy ==1.21.2
+  - numpy==1.21.2
 - R version 4.1.1 and packages:
   - knitr==1.36
 ***
