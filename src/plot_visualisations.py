@@ -11,11 +11,9 @@ Options:
 --out_dir=<out_dir>   Path to directory where the processed images will be saved in
 " -> doc
 """
-import os
 
 import pandas as pd
 import numpy as np
-import altair as alt
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -23,14 +21,6 @@ import seaborn as sns
 from docopt import docopt
 
 opt = docopt(__doc__)
-
-from selenium import webdriver
-from selenium.webdriver.firefox.options import Options as firefox_Options
-
-options = firefox_Options()
-options.headless = True
-executable_path = "/opt/homebrew/bin/geckodriver"
-driver = webdriver.Firefox(options=options, executable_path=executable_path)
 
 
 def plot_target_histogram(
@@ -45,18 +35,14 @@ def plot_target_histogram(
         target_feature (str): Feature name accepted as target
         output_dir (str, optional): Directory output for image saving. Defaults to "../reports/images/".
     """
+    plt.figure(figsize=(16, 6))
 
     # Histogram Plot of Target Variable
-    histogram_plot = (
-        alt.Chart(dataframe, title="Target variable histogram")
-        .mark_bar()
-        .encode(
-            x=alt.X(f"{target_feature}:Q", bin=True),
-            y="count()",
-        )
-    )
+    histogram_plot = sns.histplot(dataframe, x=target_feature, bins=20)
 
-    histogram_plot.save(output_dir + "target_histogram.png", webdriver=driver)
+    fig = histogram_plot.get_figure()
+
+    fig.savefig(output_dir + "target_histogram.png")
     print("Target Feature Histogram Plotted")
 
 
@@ -94,50 +80,6 @@ def plot_correlation_matrix(
     return print("Correlation Matrix Plotted")
 
 
-def plot_pairwise(
-    dataframe: pd.DataFrame, target_feature: str, output_dir: str = "../reports/images/"
-):
-    """plot_pairwise [summary]
-
-    Plots pairwise scatter plot fo features with respect to target columns
-
-    Args:
-        dataframe (pd.DataFrame): Data to be used in pairwise plot
-        target_feature (str): Feature name accepted as target
-        output_dir (str, optional): Directory output for image saving. Defaults to "../reports/images/".
-
-    Returns:
-        [type]: Images Plots and Print Statement
-    """
-
-    splom = (
-        alt.Chart(dataframe, title="Explanatory variables pair plot")
-        .mark_point(opacity=0.3)
-        .encode(
-            x=alt.X(
-                alt.repeat("column"), type="quantitative", scale=alt.Scale(zero=False)
-            ),
-            y=alt.Y(
-                alt.repeat("row"), type="quantitative", scale=alt.Scale(zero=False)
-            ),
-        )
-        .properties(width=200, height=200)
-        .repeat(
-            row=[f"{target_feature}"],
-            column=[
-                "moisture",
-                "category_one_defects",
-                "quakers",
-                "category_two_defects",
-                "altitude_mean_meters",
-            ],
-        )
-    )
-
-    splom.save(output_dir + "pairwise_plots.png", webdriver=driver)
-    return print("PairWise Scatter Plotted")
-
-
 def plot_visualisations(input_data, output_dir):
     """plot_visualisations
 
@@ -153,7 +95,6 @@ def plot_visualisations(input_data, output_dir):
 
     # Run pipelines
     plot_target_histogram(dataframe, "total_cup_points", output_dir)
-    plot_pairwise(dataframe, "total_cup_points", output_dir)
     plot_correlation_matrix(dataframe, output_dir)
 
 
