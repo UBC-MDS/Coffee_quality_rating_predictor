@@ -60,6 +60,9 @@ To replicate the analysis, do the following: clone this GitHub repository, insta
   - scikit-learn==1.0
   - requests==2.24.0
   - altair==4.1.0
+  - altair_saver=0.5.0
+  - seaborn=0.11.2
+  - selenium=4.1.0
   - seaborn ==0.11.2
   - numpy ==1.21.2
 - R version 4.1.1 and packages:
