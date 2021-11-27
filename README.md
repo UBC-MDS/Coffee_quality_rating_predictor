@@ -19,7 +19,7 @@ We begin our analysis by exploring the natural inferential sub-question of which
 
 After initially exploring regression based models, Ridge Regression and Random Forest Regressor, our analysis deviated to re-processing our data and exploring classification models. As you will see in our analysis below, predicting a continuous target variable proved quite difficult with many nonlinear features, and was not very interpretable in a real sense of what we were trying to predict. Broadening the target variable and transforming it into classes: “Good” and “Poor”, based on a threshold at the median, helped with these issues. 
 
-Our final model, using Random Forest Classification, performed averagely on an unseen test data set, with an ROC score of 0.67. We recommend continuing to study to improve this prediction model before it is put to any use, as incorrectly classifying the quality of coffee could have a large economic impact on a producers income, and have described how one might do that at the end of our analysis.
+Our final model, using Random Forest Classification, performed averagely on an unseen test data set, with an ROC score of 0.67. We recommend continuing to study to improve this prediction model before it is put to any use, as incorrectly classifying the quality of coffee could have a large economic impact on a producers income. We have described how one might do that at the end of our analysis.
  
 ***
 
