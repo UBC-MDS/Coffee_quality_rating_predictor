@@ -96,3 +96,5 @@ We faced several limitations in our analysis such as small dataset size (approxi
 Our model analysis may be improved with the inclusion of more relevant predictive features or more data. We could also try out adding more polynomial features and perform feature engineering such as combining features together to form new ones. More data cleaning methods could also be applied, such as inspection and removal of outliers, as these can affect regression model performance significantly. Additionally, we should also try out more classification models (Naive Bayes, Logistic Regression, etc.) as we see the advantage of using classification over regression models.
 
 ## References
+
+
