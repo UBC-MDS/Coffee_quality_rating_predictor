@@ -63,7 +63,6 @@ To replicate the analysis, do the following: clone this GitHub repository, insta
   - altair_saver=0.5.0
   - seaborn=0.11.2
   - selenium=4.1.0
-  - seaborn ==0.11.2
   - numpy ==1.21.2
 - R version 4.1.1 and packages:
   - knitr==1.36
