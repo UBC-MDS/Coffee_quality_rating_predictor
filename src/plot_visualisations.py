@@ -11,7 +11,6 @@ Options:
 --out_dir=<out_dir>   Path to directory where the processed images will be saved in
 " -> doc
 """
-import os
 
 import pandas as pd
 import numpy as np
@@ -36,6 +35,7 @@ def plot_target_histogram(
         target_feature (str): Feature name accepted as target
         output_dir (str, optional): Directory output for image saving. Defaults to "../reports/images/".
     """
+    plt.figure(figsize=(16, 6))
 
     # Histogram Plot of Target Variable
     histogram_plot = sns.histplot(dataframe, x=target_feature, bins=20)
