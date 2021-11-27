@@ -30,7 +30,7 @@ We will be analyzing the *[Coffee Quality Dataset](https://github.com/jldbc/coff
 ***
 
 ### Report
-The final report can be found *[here]()*.
+The final report can be found *[here](file:///Users/arlincherian/DSCI_522_GROUP3_COFFEERATINGS/reports/coffee_rating_prediction_report.html)*.
 ***
 
 ### Usage
