@@ -3,14 +3,14 @@
 
 """Fits a Ridge Regression Model, Random Forest Regressor model and a Random Forest Classification Model
 on the pre-processed training data on coffee quality rating and saves the output table and images.
-Usage: src/ml_analysis_script.py --train=<train> --test=<test> --out_dir
+Usage: src/ml_analysis_script.py --train=<train> --test=<test> --table_file=<table_file> --out_dir=<out_dir>
   
 Options:
 --train=<train>             Path (including filename) to training data in csv format
 --test=<test>               Path (including filename) to testing data in csv format
 --table_file=<table_file>   Path (including filename) where results table should be written
-—-image1_file=<image1_file>   Path (including filename) where results figures should be saved
-—-image2_file=<image2_file>   Path (including filename) where results figures should be saved
+—-out_dir=<out_dir>         Path where results figures should be saved
+
 """
 
 import os
@@ -43,7 +43,7 @@ opt = docopt(__doc__)
 # image2 = "results/images/feature_importance_rfc_plot2.png"
 
 
-def main(train, test, table_file, image1_file, image2_file):
+def main(train, test, table_file, out_dir):
     """
     Runs through all functions involved in the regression and classification 
     analysis and generate output tables and figures.
@@ -55,6 +55,8 @@ def main(train, test, table_file, image1_file, image2_file):
     table_file : (filepath) file path to the output table
     output: (filepath) file path to the output figures
     """
+    out_dir = "../results/images/"
+    
     # Reading in the train and test data and splitting 
     train_df = pd.read_csv(train)
     test_df = pd.read_csv(test)
@@ -179,8 +181,9 @@ def main(train, test, table_file, image1_file, image2_file):
     plt.xlabel("Importances")
     plt.ylabel("Features")
     
-    # Saving plot as an output           
-    plt.savefig(image1_file, bbox_inches = "tight")
+    # Saving plot as an output
+    plt.savefig("results/images/feature_importance_rfr_plot.png", bbox_inches = "tight")
+
 
 
     # Testing a classfication model on train dataset
@@ -224,7 +227,7 @@ def main(train, test, table_file, image1_file, image2_file):
     plt.ylabel("Features")
     
     # Saving plot as an output           
-    plt.savefig(image2_file, bbox_inches = "tight")
+    plt.savefig("results/images/feature_importance_rfc_plot.png", bbox_inches = "tight")
     
     # Testing performance of best regression model on test set
     random_search.score(X_test, y_test)
@@ -234,4 +237,4 @@ def main(train, test, table_file, image1_file, image2_file):
 
 # Call the main function
 if __name__ == "__main__":
-    main(opt["--train"], opt["--test"], opt["--table_file"], opt["--image1_file"], opt["--image2_file"])
+    main(opt["--train"], opt["--test"], opt["--table_file"], opt["--out_dir"])
