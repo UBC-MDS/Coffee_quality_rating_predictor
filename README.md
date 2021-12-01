@@ -33,14 +33,7 @@ The final report can be found *[here](https://rpubs.com/acherian/840439)*.
 ***
 
 ### Usage
-To replicate the analysis, do the following: 
-1. clone this GitHub repository
-2. create a conda environment with all the dependencies using the environment.yaml file:
-    - conda env create -f environment.yaml
-    - conda activate 522_group_03
-3. run this script to install the R-dependencies:
-    Rscript -e 'install.packages("knitr", repos="https://cloud.r-project.org")'
-4. Follow the command below, in your terminal:
+To replicate the analysis, do the following: clone this GitHub repository, install the dependencies listed below, and run the following commands at the command line/terminal from the root directory of this project:
 
     # download data
     python src/download_data.py --url=https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-07/coffee_ratings.csv --out_file=data/raw/coffee_ratings.csv
@@ -69,7 +62,7 @@ To replicate the analysis, do the following:
   - altair-saver==0.5.0
   - seaborn=0.11.2
   - selenium=4.1.0
-  - numpy==1.21.2
+  - numpy ==1.21.2
 - R version 4.1.1 and packages:
   - knitr==1.36
 ***
