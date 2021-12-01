@@ -1,0 +1,15 @@
+name: '522_group_03'
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - docopt
+  - scikit-learn>=1.0
+  - pandas>=1.3.*
+  - requests>=2.24.0
+  - altair_saver
+  - altair 
+  - selenium
+  - numpy>=1.21.2
+  - seaborn
+  - pandoc
