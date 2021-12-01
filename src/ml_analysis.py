@@ -3,7 +3,7 @@
 
 """Fits a Ridge Regression Model, Random Forest Regressor model and a Random Forest Classification Model
 on the pre-processed training data on coffee quality rating and saves the output table and images.
-Usage: src/ml_analysis_script.py --train=<train> --test=<test> --table_file=<table_file> --image1_file=<image1_file> --image2_file=<image2_file>
+Usage: src/ml_analysis_script.py --train=<train> --test=<test> --out_dir
   
 Options:
 --train=<train>             Path (including filename) to training data in csv format
@@ -39,8 +39,8 @@ opt = docopt(__doc__)
 # train = "data/processed/train_df.csv"
 # test = "data/processed/test_df.csv"
 # table = "results/model_comparison.csv"
-# image1 = "results/feature_importance_rfr_plot.png"
-# image2 = "results/feature_importance_rfc_plot2.png"
+# image1 = "results/images/feature_importance_rfr_plot.png"
+# image2 = "results/images/feature_importance_rfc_plot2.png"
 
 
 def main(train, test, table_file, image1_file, image2_file):
