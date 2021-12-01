@@ -24,7 +24,7 @@ opt = docopt(__doc__)
 
 
 def plot_target_histogram(
-    dataframe: pd.DataFrame, target_feature: str, output_dir: str = "../reports/images/"
+    dataframe: pd.DataFrame, target_feature: str, output_dir: str = "../results/images/"
 ):
     """plot_target_histogram [summary]
 
@@ -38,7 +38,10 @@ def plot_target_histogram(
     plt.figure(figsize=(16, 6))
 
     # Histogram Plot of Target Variable
-    histogram_plot = sns.histplot(dataframe, x=target_feature, bins=20).set_title('Distribution of target variable, total_cup_points', weight='bold')
+    histogram_plot = sns.histplot(dataframe, x=target_feature, bins=20).set_title(
+        "Distribution of target variable, total_cup_points", weight="bold"
+    )
+    histogram_plot.set(xlabel="Total Cup Points", ylabel="Count")
     fig = histogram_plot.get_figure()
 
     fig.savefig(output_dir + "target_histogram.png")
@@ -46,7 +49,7 @@ def plot_target_histogram(
 
 
 def plot_correlation_matrix(
-    dataframe: pd.DataFrame, output_dir: str = "../reports/images/"
+    dataframe: pd.DataFrame, output_dir: str = "../results/images/"
 ):
     """plot_correlation_matrix [summary]
 
