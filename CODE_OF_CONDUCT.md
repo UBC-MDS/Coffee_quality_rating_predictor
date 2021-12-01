@@ -24,7 +24,7 @@ Examples of unacceptable behavior by participants include:
 
 ## How to report and deal with unacceptable behaviour
 
-Any instances of unacceptable behaviour may be reported by reaching out to the team. The project team will review and investigate all complaints, and will respond in a way that it deems appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.
+Any instances of unacceptable behaviour may be reported by reaching out to the team via this email: mswang@student.ubc.ca. The project team will review and investigate all complaints, and will respond in a way that it deems appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.
 
 ## Consequences for unacceptable behaviour 
 
@@ -47,3 +47,5 @@ This Code of Conduct applies both within project spaces and in public spaces whe
 ## Attribution
 
 This Code of Conduct is adapted from the Tidyverse Contributor Covenant Code of Conduct available at [https://github.com/tidyverse/tidyverse.org/blob/master/CODE_OF_CONDUCT.md]
+
+
