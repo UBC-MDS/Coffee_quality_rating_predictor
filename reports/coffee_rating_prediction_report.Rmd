@@ -4,9 +4,8 @@ author: "Arlin Cherian, Michelle Wang, Kristin Bunyan, Berkay Bulut"
 bibliography: coffee_rating_refs.bib
 date: "26/11/2021 (updated: `r Sys.Date()`)" 
 output: 
-    html_document:
-        toc: true
-    always_allow_html: yes
+  html_document:
+    toc: true
 ---
 
 ```{r setup, include=FALSE}
@@ -45,13 +44,13 @@ Further cleaning was performed on this dataset to remove all variables except `t
 We performed analysis by exploring the relationship between the numeric features and the target variable, `total_cup_points` . We will use the following visualizations: a histogram showing the distribution of `total_cup_points` , and a heatmap of the correlation between the numeric features and `total_cup_points`.
 
 ```{r heatmap, echo=FALSE, fig.cap="Figure 1. Distibution of Target variable, total_cup_points", out.width = '100%'}
-knitr::include_graphics("../results/imagestarget_histogram.png")
+knitr::include_graphics("../results/images/target_histogram.png")
 ```
 
 In the above plot, we observed that the `total_cup_points` (target variable) have a left-skewed distribution. The distribution ranges from 60 to 90. Most of the values are between 80 to 85. The predictive model will learn the target data in this range.
 
 ```{r histogram, echo=FALSE, fig.cap="Figure 2. Correlation heatmap of numeric features against target", out.width = '100%'}
-knitr::include_graphics("../results/imagescorrelation_matrix_heatmap.png")
+knitr::include_graphics("../results/images/correlation_matrix_heatmap.png")
 ```
 
 In the above correlation matrix, we observed that category two defects feature has the highest absolute correlation with `total_cup_points` . The second highest correlation is with category one defects followed by moisture. This feature will show up later during our modelling process as one of the top few important features. All features except quakers feature have a negative correlation with the target variable. Altitude mean meters feature seems to have a weak correlation to the target although this feature will later on prove to still be useful in classification modelling.
@@ -66,6 +65,8 @@ Below are the cross-validation scores from the regression models:
 
 ```{r, echo = FALSE, message=FALSE, warning=FALSE}
 col <- read_csv("../results/model_comparison.csv")
+names(col)[1] <- " "
+  
 kable(col,
       caption = "**Table 2.** Table 1. Regression and Classification Cross-validation Results.") %>%
   kable_styling(latex_options="scale_down")
@@ -74,7 +75,7 @@ kable(col,
 As seen from the results of cross-validation, both Ridge (R\^2 score -0.065) and Random Forest Regression models (R\^2 score 0.169) did not perform very well on our dataset. The Random Forest Regression model had a higher validation score than the Ridge model, so we picked this model for hyperparameter optimization via the random search algorithm. This improved the R\^2 score to 0.25.
 
 ```{r feature-imp rfr, echo=FALSE, fig.cap="Figure 1. Random Forest Regressor Feature Importances", out.width = '70%'}
-knitr::include_graphics("../results/feature_importance_rfr_plot.png")
+knitr::include_graphics("../results/images/feature_importance_rfr_plot.png")
 ```
 
 Here, we display the important features from the best model from our random search in the above barplot. Altitude, moisture and Mexico as Country of Origin were the top 3 important features.
@@ -84,7 +85,7 @@ Since the regression models produced R\^2 scores of below 0.5, we also applied a
 Referring back to Table 1 of results, we can see that the Random Forest Classifier model performance is acceptable, with cross-validation ROC score of 0.72. This model's performance is better than the regression models as the test score on the test set was about 0.67.
 
 ```{r feature-imp rfc, echo=FALSE, fig.cap="Figure 1. Random Forest Classifier Feature Importances", out.width = '70%'}
-knitr::include_graphics("../results/feature_importance_rfc_plot.png")
+knitr::include_graphics("../results/images/feature_importance_rfc_plot.png")
 ```
 
 Interestingly, the top 5 important features in this classifier included 3 similar features shown from the Random Forest Regressor model: altitude, moisture and Mexico made it to the top 5 again. However, these results did not correlate to what we see from our initial EDA analysis above.
@@ -96,5 +97,3 @@ We faced several limitations in our analysis such as small dataset size (approxi
 Our model analysis may be improved with the inclusion of more relevant predictive features or more data. We could also try out adding more polynomial features and perform feature engineering such as combining features together to form new ones. More data cleaning methods could also be applied, such as inspection and removal of outliers, as these can affect regression model performance significantly. Additionally, we should also try out more classification models (Naive Bayes, Logistic Regression, etc.) as we see the advantage of using classification over regression models.
 
 ## References
-
-
