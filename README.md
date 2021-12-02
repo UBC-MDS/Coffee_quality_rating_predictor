@@ -42,22 +42,22 @@ To replicate the analysis, do the following:
     - Rscript -e 'install.packages("knitr", repos="https://cloud.r-project.org")'
 4. Follow the commands below, in your terminal:
 
+```
+# download data
+python src/download_data.py --url=https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-07/coffee_ratings.csv --  out_file=data/raw/coffee_ratings.csv
 
-    # download data
-    python src/download_data.py --url=https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-07/coffee_ratings.csv --  out_file=data/raw/coffee_ratings.csv
+# pre-process data
+python src/prepare_data.py --input_data=data/raw/coffee_ratings.csv --out_dir=data/processed/
 
-    # pre-process data
-    python src/prepare_data.py --input_data=data/raw/coffee_ratings.csv --out_dir=data/processed/
-    
-    # run eda analysis
-    python src/plot_visualisations.py --input_data='data/processed/train_df.csv' --out_dir='results/images/'
-    
-    # run the main analysis
-    python src/ml_analysis.py --train="data/processed/train_df.csv" --test="data/processed/test_df.csv" --table_file="results/model_comparison.csv" --out_dir="results/images/"
+# run eda analysis
+python src/plot_visualisations.py --input_data='data/processed/train_df.csv' --out_dir='results/images/'
 
-    # render final report
-    Rscript -e "rmarkdown::render('reports/coffee_rating_prediction_report.rmd', output_format = 'html_document')"
+# run the main analysis
+python src/ml_analysis.py --train="data/processed/train_df.csv" --test="data/processed/test_df.csv" --table_file="results/model_comparison.csv" --out_dir="results/images/"
 
+# render final report
+Rscript -e "rmarkdown::render('reports/coffee_rating_prediction_report.rmd', output_format = 'html_document')"
+```
 
 ## Dependencies 
 
