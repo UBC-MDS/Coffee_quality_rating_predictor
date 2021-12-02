@@ -40,7 +40,7 @@ To replicate the analysis, do the following:
     - conda activate 522_group_03
 3. run this script to install the R-dependencies:
     Rscript -e 'install.packages("knitr", repos="https://cloud.r-project.org")'
-4. Follow the command below, in your terminal:
+4. Follow the commands below, in your terminal:
 
     # download data
     python src/download_data.py --url=https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-07/coffee_ratings.csv --out_file=data/raw/coffee_ratings.csv
