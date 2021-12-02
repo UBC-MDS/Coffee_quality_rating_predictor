@@ -41,7 +41,7 @@ def plot_target_histogram(
     histogram_plot = sns.histplot(dataframe, x=target_feature, bins=20).set_title(
         "Distribution of target variable, total_cup_points", weight="bold"
     )
-    histogram_plot.set(xlabel="Total Cup Points", ylabel="Count")
+
     fig = histogram_plot.get_figure()
 
     fig.savefig(output_dir + "target_histogram.png")
