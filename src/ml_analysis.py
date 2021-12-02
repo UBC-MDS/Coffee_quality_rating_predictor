@@ -10,7 +10,6 @@ Options:
 --test=<test>               Path (including filename) to testing data in csv format
 --table_file=<table_file>   Path (including filename) where results table should be written
 —-out_dir=<out_dir>         Path where results figures should be saved
-
 """
 
 import os
