@@ -39,7 +39,7 @@ To replicate the analysis, do the following:
     - conda env create -f environment.yaml
     - conda activate 522_group_03
 3. run this script to install the R-dependencies:
-    Rscript -e 'install.packages("knitr", repos="https://cloud.r-project.org")'
+    - Rscript -e 'install.packages("knitr", repos="https://cloud.r-project.org")'
 4. Follow the commands below, in your terminal:
 
     # download data
