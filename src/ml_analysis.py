@@ -39,8 +39,7 @@ opt = docopt(__doc__)
 # train = "data/processed/train_df.csv"
 # test = "data/processed/test_df.csv"
 # table = "results/model_comparison.csv"
-# image1 = "results/images/feature_importance_rfr_plot.png"
-# image2 = "results/images/feature_importance_rfc_plot2.png"
+# outdir="rsults/images/"
 
 
 def main(train, test, table_file, out_dir):
@@ -55,7 +54,6 @@ def main(train, test, table_file, out_dir):
     table_file : (filepath) file path to the output table
     output: (filepath) file path to the output figures
     """
-    out_dir = "../results/images/"
     
     # Reading in the train and test data and splitting 
     train_df = pd.read_csv(train)
@@ -182,8 +180,7 @@ def main(train, test, table_file, out_dir):
     plt.ylabel("Features")
     
     # Saving plot as an output
-    plt.savefig("results/images/feature_importance_rfr_plot.png", bbox_inches = "tight")
-
+    plt.savefig(out_dir + "feature_importance_rfr_plot.png", bbox_inches = "tight")
 
 
     # Testing a classfication model on train dataset
@@ -227,7 +224,7 @@ def main(train, test, table_file, out_dir):
     plt.ylabel("Features")
     
     # Saving plot as an output           
-    plt.savefig("results/images/feature_importance_rfc_plot.png", bbox_inches = "tight")
+    plt.savefig(out_dir + "feature_importance_rfc_plot.png", bbox_inches = "tight")
     
     # Testing performance of best regression model on test set
     random_search.score(X_test, y_test)
