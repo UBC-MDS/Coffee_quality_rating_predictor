@@ -33,6 +33,10 @@ The final report can be found *[here](https://rpubs.com/acherian/840439)*.
 ***
 
 ### Usage
+There are two ways to run the analysis.
+
+#### 1\. Using shell script 
+
 To replicate the analysis, do the following: 
 1. clone this GitHub repository
 2. create a conda environment with all the dependencies using the environment.yaml file:
@@ -42,23 +46,36 @@ To replicate the analysis, do the following:
     - Rscript -e 'install.packages("knitr", repos="https://cloud.r-project.org")'
 4. Follow the commands below, in your terminal:
 
+```
+# download data
+python src/download_data.py --url=https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-07/coffee_ratings.csv --  out_file=data/raw/coffee_ratings.csv
 
-    # download data
-    python src/download_data.py --url=https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-07/coffee_ratings.csv --  out_file=data/raw/coffee_ratings.csv
+# pre-process data
+python src/prepare_data.py --input_data=data/raw/coffee_ratings.csv --out_dir=data/processed/
 
-    # pre-process data
-    python src/prepare_data.py --input_data=data/raw/coffee_ratings.csv --out_dir=data/processed/
+# run eda analysis
+python src/plot_visualisations.py --input_data='data/processed/train_df.csv' --out_dir='results/images/'
+
+# run the main analysis
+python src/ml_analysis.py --train="data/processed/train_df.csv" --test="data/processed/test_df.csv" --table_file="results/model_comparison.csv" --out_dir="results/images/"
+
+# render final report
+Rscript -e "rmarkdown::render('reports/coffee_rating_prediction_report.rmd', output_format = 'html_document')"
+```
+
+#### 2\. Using Make
+
+To replicate the entire analysis and output the final report, clone this GitHub repository, install the dependencies listed below, and run the following
+command at the command line/terminal from the root directory of this project:
+
+    make all
+
+To reset the repo to a clean state, with no intermediate or results
+files, run the following command at the command line/terminal from the
+root directory of this project:
+
+    make clean
     
-    # run eda analysis
-    python src/plot_visualisations.py --input_data='data/processed/train_df.csv' --out_dir='results/images/'
-    
-    # run the main analysis
-    python src/ml_analysis.py --train="data/processed/train_df.csv" --test="data/processed/test_df.csv" --table_file="results/model_comparison.csv" --out_dir="results/images/"
-
-    # render final report
-    Rscript -e "rmarkdown::render('reports/coffee_rating_prediction_report.rmd', output_format = 'html_document')"
-
-
 ## Dependencies 
 
 - Python 3.7.4 and Python packages:
