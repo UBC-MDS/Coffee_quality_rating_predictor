@@ -52,7 +52,7 @@ To replicate the analysis, do the following:
     python src/plot_visualisations.py --input_data='data/processed/train_df.csv' --out_dir='results/images/'
     
     # run the main analysis
-    python src/ml_analysis.py --train="data/processed/train_df.csv" --test="data/processed/test_df.csv" --table_file="results/model_comparison.csv" --out_dir="results/images"
+    python src/ml_analysis.py --train="data/processed/train_df.csv" --test="data/processed/test_df.csv" --table_file="results/model_comparison.csv" --out_dir="results/images/"
 
     # render final report
     Rscript -e "rmarkdown::render('reports/coffee_rating_prediction_report.rmd', output_format = 'html_document')"
