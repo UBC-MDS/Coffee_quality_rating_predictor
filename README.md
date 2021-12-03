@@ -65,7 +65,8 @@ Rscript -e "rmarkdown::render('reports/coffee_rating_prediction_report.rmd', out
 
 #### 2\. Using Make
 
-To replicate the entire analysis and output the final report, clone this GitHub repository, install the dependencies listed below, and run the following
+To replicate the entire analysis and output the final report, clone this GitHub repository, install the dependencies listed below 
+(or create a conda environment with all the dependencies using the environment.yaml file) and run the following
 command at the command line/terminal from the root directory of this project:
 
     make all
