@@ -48,7 +48,7 @@ To replicate the analysis, do the following:
 
 ```
 # download data
-python src/download_data.py --url=https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-07/coffee_ratings.csv --  out_file=data/raw/coffee_ratings.csv
+python src/download_data.py --url=https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-07/coffee_ratings.csv --out_file=data/raw/coffee_ratings.csv
 
 # pre-process data
 python src/prepare_data.py --input_data=data/raw/coffee_ratings.csv --out_dir=data/processed/
