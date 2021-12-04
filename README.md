@@ -40,10 +40,16 @@ There are two ways to run the analysis.
 To replicate the analysis, do the following: 
 1. clone this GitHub repository
 2. create a conda environment with all the dependencies using the environment.yaml file with your terminal:
-    - ```conda env create -f environment.yaml```
-    - ```conda activate 522_group_03```
+```
+conda env create -f environment.yaml
+```
+```
+conda activate 522_group_03
+```
 3. run this script to install the R-dependencies:
-    - ```Rscript -e 'install.packages("knitr", repos="https://cloud.r-project.org")'```
+```
+Rscript -e 'install.packages("knitr", repos="https://cloud.r-project.org")'
+```
 4. Run the following commands at the command line/terminal from the root directory of this project:
 
 ```
