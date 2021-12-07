@@ -77,6 +77,9 @@ root directory of this project:
 
     make clean
     
+## Dependency Diagram of [Makefile](https://github.com/UBC-MDS/DSCI_522_GROUP3_COFFEERATINGS/blob/main/Makefile)
+![Dependency Diagram](https://github.com/UBC-MDS/DSCI_522_GROUP3_COFFEERATINGS/blob/main/Makefile.png)
+
 ## Dependencies 
 
 - Python 3.7.4 and Python packages:
