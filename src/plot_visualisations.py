@@ -33,18 +33,18 @@ def plot_target_histogram(
     Args:
         dataframe (pd.DataFrame): Dataframe to use for plotting
         target_feature (str): Feature name accepted as target
-        output_dir (str, optional): Directory output for image saving. Defaults to "../reports/images/".
+        output_dir (str, optional): Directory output for image saving. Defaults to "../results/images/".
     """
     plt.figure(figsize=(16, 6))
 
     # Histogram Plot of Target Variable
-    histogram_plot = sns.histplot(dataframe, x=target_feature, bins=20).set_title(
-        "Distribution of target variable, total_cup_points", weight="bold"
+    sns.histplot(dataframe, x=target_feature, bins=20).set_title(
+        "Distribution of total cup points (target variable)", weight="bold"
     )
+    plt.xlabel("Total cup points")
+    plt.ylabel("Count")
 
-    fig = histogram_plot.get_figure()
-
-    fig.savefig(output_dir + "target_histogram.png")
+    plt.savefig(output_dir + "target_histogram.png")
     print("Target Feature Histogram Plotted")
 
 
@@ -57,27 +57,27 @@ def plot_correlation_matrix(
 
     Args:
         dataframe (pd.DataFrame): Data to be used in correlation
-        output_dir (str, optional): Directory output for image saving. Defaults to "../reports/images/".
+        output_dir (str, optional): Directory output for image saving. Defaults to "../results/images/".
 
     Returns:
         [type]: Images Plots and Print Statement
     """
+   # dataframe = pd.read_csv("data/processed/train_df.csv")
+    graphing = dataframe.copy()
+    graphing = graphing.drop(columns = ["category_one_defects", "category_two_defects"])
 
     # Correlation Plot - Diagonal Removed
     plt.figure(figsize=(16, 6))
 
-    correlation_matrix = dataframe.corr()
+    correlation_matrix = graphing.corr()
 
     mask = np.triu(np.ones_like(correlation_matrix, dtype=np.bool_))
 
-    heatmap = sns.heatmap(
+    sns.heatmap(
         correlation_matrix, mask=mask, vmin=-1, vmax=1, annot=True, cmap="BrBG"
-    )
-
-    heatmap.set_title("Correlation Heatmap", fontdict={"fontsize": 12}, pad=12)
-
-    fig = heatmap.get_figure()
-    fig.savefig(output_dir + "correlation_matrix_heatmap.png")
+    ).set_title("Correlation Heatmap of numerical variables with target variable", fontdict={"fontsize": 12}, pad=12)
+ 
+    plt.savefig(output_dir + "correlation_matrix_heatmap.png")
 
     return print("Correlation Matrix Plotted")
 
