@@ -23,7 +23,7 @@ Our final model, using Random Forest Classification, performed averagely on an u
 ***
 
 ### Dataset
-We will be analyzing the *[Coffee Quality Dataset](https://github.com/jldbc/coffee-quality-database)*, collected by the Coffee Quality Institute in January 2018. The data was retrieved from tidytuesday, courtesy of James LeDoux, a Data Scientist at Buzzfeed (DeLoux, J). The data is collected on Arabica coffee beans from across the world and professionally rated on a 0-100 scale based on factors like acidity, sweetness, fragrance, balance, etc. The dataset also contains information about coffee bean origin country, harvesting and grading date, colour, defects, processing and packaging details.  
+We will be analyzing the *[Coffee Quality Dataset](https://github.com/jldbc/coffee-quality-database)*, collected by the Coffee Quality Institute in January 2018. The data was retrieved from tidytuesday, courtesy of James LeDoux, a Data Scientist at Buzzfeed (DeLoux, J). The data is collected on Arabica coffee beans from across the world and professionally rated on a 0-100 scale based on factors like acidity, sweetness, fragrance, balance, etc. The dataset also contains information about coffee bean origin country, harvesting and grading date, colour, defects, processing and packaging details. For a full description of the variables included in the dataset, please visit the website linked above. 
 * [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 * Data format: csv file, 1311 rows and 44 columns.
 ***
@@ -40,10 +40,16 @@ There are two ways to run the analysis.
 To replicate the analysis, do the following: 
 1. clone this GitHub repository
 2. create a conda environment with all the dependencies using the environment.yaml file with your terminal:
-    - ```conda env create -f environment.yaml```
-    - ```conda activate 522_group_03```
+```
+conda env create -f environment.yaml
+```
+```
+conda activate 522_group_03
+```
 3. run this script to install the R-dependencies:
-    - ```Rscript -e 'install.packages("knitr", repos="https://cloud.r-project.org")'```
+```
+Rscript -e 'install.packages("knitr", repos="https://cloud.r-project.org")'
+```
 4. Run the following commands at the command line/terminal from the root directory of this project:
 
 ```
