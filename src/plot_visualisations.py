@@ -63,6 +63,12 @@ def plot_correlation_matrix(
         [type]: Images Plots and Print Statement
     """
    # dataframe = pd.read_csv("data/processed/train_df.csv")
+    assert type(dataframe) == pd.core.frame.DataFrame
+    print("Success")
+    
+    assert type(output_dir) == str
+    print("Success")
+    
     graphing = dataframe.copy()
     graphing = graphing.drop(columns = ["category_one_defects", "category_two_defects"])
 
