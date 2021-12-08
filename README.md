@@ -83,6 +83,8 @@ root directory of this project:
 
     make clean
     
+The estimated time to download data and perform analysis via makefile is less than 5 min.
+
 ## Dependency Diagram of [Makefile](https://github.com/UBC-MDS/DSCI_522_GROUP3_COFFEERATINGS/blob/main/Makefile)
 ![Dependency Diagram](https://github.com/UBC-MDS/DSCI_522_GROUP3_COFFEERATINGS/blob/main/Makefile.png)
 
