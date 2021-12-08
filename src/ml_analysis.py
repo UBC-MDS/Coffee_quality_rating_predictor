@@ -55,14 +55,26 @@ def main(train, test, table_file, out_dir):
     """
     
     # Reading in the train and test data and splitting 
-    train_df = pd.read_csv(train)
-    test_df = pd.read_csv(test)
-
+    try:
+        train_df = pd.read_csv(train)
+        test_df = pd.read_csv(test)
+    except Exception as e:
+        print("Unable to read training and/or testing data. Please check filepaths.")
+    
+    # Testing for output directory path 
+    if not os.path.exists(out_dir):
+        try:
+            os.makedirs(out_dir)
+        except:
+            print("The output directory was not created. Please check for authorization.")
+        
     X_train = train_df.drop(columns=["total_cup_points"])
     X_test = test_df.drop(columns=["total_cup_points"])
 
     y_train = train_df["total_cup_points"]
     y_test = test_df["total_cup_points"]
+    
+    
 
     # Create a preprocessor for feature transformations
 
@@ -89,6 +101,7 @@ def main(train, test, table_file, out_dir):
     )
 
     # Define cross val function
+    # function adapted from DSCI 573 lecture notes
     def mean_std_cross_val_scores(model, X_train, y_train, **kwargs):
         """
         Returns mean and std of cross validation
@@ -116,7 +129,9 @@ def main(train, test, table_file, out_dir):
             out_col.append((f"%0.3f (+/- %0.3f)" % (mean_scores[i], std_scores[i])))
 
         return pd.Series(data=out_col, index=mean_scores.index)
-        
+
+        assert type(model) == str # test that the model_name is a string
+        assert type(X_train) == pd.Dataframe # test that X_train is a dataframe
 
 # Building regression models
 
@@ -230,6 +245,9 @@ def main(train, test, table_file, out_dir):
 
     # Testing performance of classification model on test set
     pipe.score(X_test_new, y_test_new)
+    
+    
+    #
 
 # Call the main function
 if __name__ == "__main__":
