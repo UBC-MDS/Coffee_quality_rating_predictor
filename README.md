@@ -68,6 +68,7 @@ python src/ml_analysis.py --train="data/processed/train_df.csv" --test="data/pro
 # render final report
 Rscript -e "rmarkdown::render('reports/coffee_rating_prediction_report.rmd', output_format = 'html_document')"
 ```
+The estimated time to download data and perform analysis via shell script is less than 5 min.
 
 #### 2\. Using Make
 
