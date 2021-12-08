@@ -63,7 +63,6 @@ def coffee_region(text):
                      "Kenya",
                      "Malawi",
                      "Ethiopia",
-                     "Laos",
                      "Rwanda") 
 
     for country in country_list1:
@@ -77,6 +76,15 @@ def coffee_region(text):
     for country in country_list3:
         if text == country:
             return region_3
+
+assert coffee_region("Uganda") == "East Africa and the Arabian Peninsula"
+print("Success")
+
+assert coffee_region("Laos") == "Southeast Asia and the Pacific"
+print("Success")
+
+assert coffee_region("Nicaragua") == "Latin America"
+print("Success")
 
 #function to format the file path name
 def file_path_name(file_path, data_frame):
@@ -99,6 +107,9 @@ def file_path_name(file_path, data_frame):
     texts = file_path + data_frame + ".csv"
     texts.replace("//", "/")
     return texts
+
+assert file_path_name("data/","processed") == "data/processed.csv"
+print("Success")
 
 # create opt object
 opt = docopt(__doc__)
@@ -176,7 +187,6 @@ def main(input_data, out_dir):
         os.makedirs(os.path.dirname(file_path_name(out_dir, "test_df")))
         test_df.to_csv(file_path_name(out_dir, "test_df"), index = False)
     
-
 if __name__ == "__main__":
     main(opt["--input_data"], opt["--out_dir"])
   
