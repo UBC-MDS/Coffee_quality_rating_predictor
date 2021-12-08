@@ -103,6 +103,10 @@ The estimated time to download data and perform analysis via makefile is less th
   - numpy==1.21.2
 - R version 4.1.1 and packages:
   - knitr==1.36
+  - kableExtra==1.3.4
+  - rmarkdown==2.10
+
+
 ***
 
 ## References
