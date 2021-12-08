@@ -49,6 +49,8 @@ conda activate 522_group_03
 3. run this script to install the R-dependencies:
 ```
 Rscript -e 'install.packages("knitr", repos="https://cloud.r-project.org")'
+Rscript -e 'install.packages("kableExtra", repos="https://cloud.r-project.org")'
+Rscript -e 'install.packages("rmarkdown", repos="https://cloud.r-project.org")'
 ```
 4. Run the following commands at the command line/terminal from the root directory of this project:
 
