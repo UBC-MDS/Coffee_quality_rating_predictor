@@ -68,13 +68,13 @@ col <- read_csv("../results/model_comparison.csv")
 names(col)[1] <- " "
   
 kable(col,
-      caption = "**Table 2.** Table 1. Regression and Classification Cross-validation Results.") %>%
+      caption = "**Table 1.** Regression and Classification Cross-validation Results.") %>%
   kable_styling(latex_options="scale_down")
 ```
 
 As seen from the results of cross-validation, both Ridge (R\^2 score -0.065) and Random Forest Regression models (R\^2 score 0.169) did not perform very well on our dataset. The Random Forest Regression model had a higher validation score than the Ridge model, so we picked this model for hyperparameter optimization via the random search algorithm. This improved the R\^2 score to 0.25.
 
-```{r feature-imp rfr, echo=FALSE, fig.cap="Figure 1. Random Forest Regressor Feature Importances", out.width = '70%'}
+```{r feature-imp rfr, echo=FALSE, fig.cap="Figure 3.. Random Forest Regressor Feature Importances", out.width = '70%'}
 knitr::include_graphics("../results/images/feature_importance_rfr_plot.png")
 ```
 
@@ -84,7 +84,7 @@ Since the regression models produced R\^2 scores of below 0.5, we also applied a
 
 Referring back to Table 1 of results, we can see that the Random Forest Classifier model performance is acceptable, with cross-validation ROC score of 0.72. This model's performance is better than the regression models as the test score on the test set was about 0.67.
 
-```{r feature-imp rfc, echo=FALSE, fig.cap="Figure 1. Random Forest Classifier Feature Importances", out.width = '70%'}
+```{r feature-imp rfc, echo=FALSE, fig.cap="Figure 4. Random Forest Classifier Feature Importances", out.width = '70%'}
 knitr::include_graphics("../results/images/feature_importance_rfc_plot.png")
 ```
 
@@ -95,5 +95,7 @@ Interestingly, the top 5 important features in this classifier included 3 simila
 We faced several limitations in our analysis such as small dataset size (approximately thousand rows) and limited types of features available for feature engineering and modelling. In addition, many features had to be discarded due to their lack of relevance to our models. For example, features such as aroma, flavour, aftertaste, acidity, body, balance, uniformity, or sweetness were all discarded as they were just individual contributors to the calculation of the overall rating or the target variable.
 
 Our model analysis may be improved with the inclusion of more relevant predictive features or more data. We could also try out adding more polynomial features and perform feature engineering such as combining features together to form new ones. More data cleaning methods could also be applied, such as inspection and removal of outliers, as these can affect regression model performance significantly. Additionally, we should also try out more classification models (Naive Bayes, Logistic Regression, etc.) as we see the advantage of using classification over regression models.
+
+This report was constructed using Rmarkdown[@Rrmarkdown] and Knitr[@Rknitr] Packages in R.
 
 ## References
