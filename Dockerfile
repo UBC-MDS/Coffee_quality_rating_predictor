@@ -10,6 +10,9 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
 	--deps TRUE \
 	tidyverse
 
+# Fix error
+RUN apt-get install -y --no-install-recommends libxt6
+
 # install the kableExtra package using install.packages
 RUN Rscript -e "install.packages('kableExtra')"
 RUN Rscript -e "install.packages('knitr')"
