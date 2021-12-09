@@ -10,14 +10,16 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
 	--deps TRUE \
 	tidyverse
 
-# Fix error
-RUN apt-get install -y --no-install-recommends libxt6
+# Fix warning message
+# RUN apt-get install -y --no-install-recommends libxt6
+RUN apt-get install libxt6
 
-# install the kableExtra package using install.packages
+# install R packages using install.packages
 RUN Rscript -e "install.packages('kableExtra')"
 RUN Rscript -e "install.packages('knitr')"
 RUN Rscript -e "install.packages('rmarkdown')"
 
+# Set up miniconda and environment path for miniconda
 RUN wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
 RUN bash Miniconda3-latest-Linux-x86_64.sh -b
