@@ -33,7 +33,7 @@ The final report can be found *[here](https://rpubs.com/acherian/840439)*.
 ***
 
 ### Usage
-There are two ways to run the analysis.
+There are three ways to run the analysis.
 
 #### 1\. Using shell script 
 
@@ -116,8 +116,6 @@ docker run --rm -v /$(pwd)://home//rstudio//coffee berkaybulut/coffee_prediction
   - pandas==1.3.3
   - scikit-learn==1.0
   - requests==2.24.0
-  - altair==4.1.0
-  - altair-saver==0.5.0
   - seaborn=0.11.2
   - selenium=4.1.0
   - numpy==1.21.2
