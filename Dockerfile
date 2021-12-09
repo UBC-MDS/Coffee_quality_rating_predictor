@@ -1,4 +1,5 @@
 # Docker file for the coffee ratings prediction project
+# Group 4: Michelle, Arlin, Kristen, Berkay
 
 # use rocker/tidyverse as the base image
 FROM rocker/tidyverse@sha256:d0cd11790cc01deeb4b492fb1d4a4e0d5aa267b595fe686721cfc7c5e5e8a684
