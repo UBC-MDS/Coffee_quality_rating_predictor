@@ -7,39 +7,22 @@ FROM rocker/tidyverse@sha256:d0cd11790cc01deeb4b492fb1d4a4e0d5aa267b595fe686721c
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
 	&& install2.r --error \
 	--deps TRUE \
-	knitr \
-	rmarkdown
-# cowsay \
-# here \
-# feather \
-# ggridges \
-# ggthemes \
-# e1071 \
-# caret \
-
+	tidyverse
 
 # install the kableExtra package using install.packages
 RUN Rscript -e "install.packages('kableExtra')"
+RUN Rscript -e "install.packages('knitr')"
+RUN Rscript -e "install.packages('rmarkdown')"
 
-# install the anaconda distribution of python
-RUN wget --quiet https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh -O ~/anaconda.sh && \
-	/bin/bash ~/anaconda.sh -b -p /opt/conda && \
-	rm ~/anaconda.sh && \
-	ln -s /opt/conda/etc/profile.d/conda.sh /etc/profile.d/conda.sh && \
-	echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc && \
-	echo "conda activate base" >> ~/.bashrc && \
-	find /opt/conda/ -follow -type f -name '*.a' -delete && \
-	find /opt/conda/ -follow -type f -name '*.js.map' -delete && \
-	/opt/conda/bin/conda clean -afy && \
-	/opt/conda/bin/conda update -n base -c defaults conda
+RUN wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
-# put anaconda python in path
-ENV PATH="/opt/conda/bin:${PATH}"
+RUN bash Miniconda3-latest-Linux-x86_64.sh -b
+
+ENV PATH=/root/miniconda3/bin:${PATH} 
 
 
 # Install Python 3 packages
 RUN conda install --quiet --yes \
-	altair=4.1.* \
 	docopt=0.6.2 \
 	pandas=1.3.3	\
 	scikit-learn=1.0 \
