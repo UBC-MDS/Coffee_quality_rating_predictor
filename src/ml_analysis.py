@@ -15,7 +15,6 @@ Options:
 import os
 import pandas as pd
 import numpy as np
-import altair as alt
 import seaborn as sns
 from docopt import docopt
 import matplotlib.pyplot as plt
