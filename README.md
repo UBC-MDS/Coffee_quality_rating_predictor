@@ -88,6 +88,24 @@ root directory of this project:
     
 The estimated time to download data and perform analysis via makefile is less than 5 min.
 
+#### 3\. Using Docker
+*note - the instructions in this section also depends on running this in
+a unix shell (e.g., terminal or Git Bash)*
+
+To replicate the analysis, install
+[Docker](https://www.docker.com/get-started). Then clone this GitHub
+repository and run the following command at the command line/terminal
+from the root directory of this project:
+```
+docker run --rm -v /$(pwd)://home//rstudio//coffee berkaybulut/coffee_prediction:v0.4.0 make -C //home//rstudio//coffee all
+```
+
+To reset the repo to a clean state, with no intermediate or results
+files, run the following command at the command line/terminal from the
+root directory of this project:
+```
+docker run --rm -v /$(pwd)://home//rstudio//coffee berkaybulut/coffee_prediction:v0.4.0 make -C //home//rstudio//coffee clean
+```
 ## Dependency Diagram of [Makefile](https://github.com/UBC-MDS/DSCI_522_GROUP3_COFFEERATINGS/blob/main/Makefile)
 ![Dependency Diagram](https://github.com/UBC-MDS/DSCI_522_GROUP3_COFFEERATINGS/blob/main/Makefile.png)
 
