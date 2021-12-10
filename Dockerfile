@@ -14,7 +14,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
 # RUN apt-get install -y --no-install-recommends libxt6
 RUN apt-get install libxt6
 
-# install R packages using install.packages
+# Install R packages using install.packages
 RUN Rscript -e "install.packages('kableExtra')"
 RUN Rscript -e "install.packages('knitr')"
 RUN Rscript -e "install.packages('rmarkdown')"
