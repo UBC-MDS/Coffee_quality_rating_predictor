@@ -97,14 +97,14 @@ To replicate the analysis, install
 repository and run the following command at the command line/terminal
 from the root directory of this project:
 ```
-docker run --rm -v /$(pwd)://home//rstudio//coffee berkaybulut/coffee_prediction:v1.0.0 make -C //home//rstudio//coffee all
+docker run --rm -v /$(pwd)://home//rstudio//coffee berkaybulut/coffee_prediction:v0.7.0 make -C //home//rstudio//coffee all
 ```
 
 To reset the repo to a clean state, with no intermediate or results
 files, run the following command at the command line/terminal from the
 root directory of this project:
 ```
-docker run --rm -v /$(pwd)://home//rstudio//coffee berkaybulut/coffee_prediction:v1.0.0 make -C //home//rstudio//coffee clean
+docker run --rm -v /$(pwd)://home//rstudio//coffee berkaybulut/coffee_prediction:v0.7.0 make -C //home//rstudio//coffee clean
 ```
 The estimated time to download data and perform analysis via docker is around 5 min.
 
