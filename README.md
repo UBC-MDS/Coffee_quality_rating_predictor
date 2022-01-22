@@ -5,7 +5,8 @@
 
 ## Introduction 
 
-This data analysis was performed as part of the DSCI 522, Data Science Workflows course at the University of British Columbia's Master of Data Science Program. Our team will use machine learning techniques to predict coffee quality on arabica coffees. We will be using an exploratory data analysis roadmap and predictive modeling to create this project. 
+This data analysis was performed as part of the DSCI 522, Data Science Workflows course at the University of British Columbia's Master of Data Science Program. Our team will use machine learning techniques to predict coffee quality on arabica coffees. We will be using an exploratory data analysis roadmap and predictive modeling to create this project.
+-
 
 
 ## About
